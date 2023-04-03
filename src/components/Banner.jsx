@@ -18,6 +18,7 @@ export default function Banner() {
         }, delta)
 
         return ()=>{ clearInterval(ticker)}
+        // eslint-disable-next-line 
     }, [text])
 
     const tick = ()=>{
@@ -44,8 +45,8 @@ export default function Banner() {
 
     return (
         <section className='banner' id='home'>
-            <Container className='banner' id='home'>
-                <Row className='align-item-centre'>
+            <Container>
+                <Row className='aligh-items-center'>
                     <Col xs={12} md={6} xl={7}>
                         <span className='tagline'>Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Java developer `}<span className='wrap'>{text}</span></h1>
