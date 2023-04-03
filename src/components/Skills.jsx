@@ -62,7 +62,7 @@ export default function Skills() {
                     </Col>
                 </Row>
             </Container>
-            <img className='background-image-left' src={colorSharp} alt="Image"/>
+            <img className='background-image-left' src={colorSharp} alt="img"/>
         </section>
     )
 }
