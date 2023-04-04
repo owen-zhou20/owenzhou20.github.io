@@ -12,7 +12,7 @@ export const MailchimpForm = () => {
                 <Newsletter
                     status={status}
                     message={message}
-                    onValidated={formData => subscribe(formDate)}
+                    onValidated={formData => subscribe(formData)}
                 ></Newsletter>
             )}
         ></MailchimpSubscribe>
