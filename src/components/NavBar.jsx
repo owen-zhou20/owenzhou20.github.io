@@ -57,7 +57,7 @@ export default function NavBar() {
                 <a href='/#'><img src={navIcon3} alt='navIcon3'></img></a>
               </div>
               <Nav>
-                <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateSctiveLink('connect')}><button className='vvd' onClick={() => onUpdateSctiveLink('connect')}><span>Let's Connect</span></button></Nav.Link>
+                <Nav.Link download={'/src/assets/cv/CVOwenZhou.pdf'} href="/src/assets/cv/CVOwenZhou.pdf" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateSctiveLink('connect')}><button className='vvd' onClick={() => onUpdateSctiveLink('connect')}><span>Let's Connect</span></button></Nav.Link>
               </Nav>
             </span>
           </Navbar.Collapse>
