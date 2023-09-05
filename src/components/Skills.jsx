@@ -38,23 +38,36 @@ export default function Skills() {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>Back-end: JAVA EE(Web), SpringBoot2, SpringCloud, AliCloud, Nacos, Feign, SpringSecurity, Gateway, Nginx, Maven, C#<br/>
+                             Front-end:  Vue, React, JavaScript, HTML, CSS<br/> 
+                             Database:  MySQL, Redis, MyBatis, MyBatis-Plus, JDBC, Microsoft SQL Server<br/> 
+                             Test: Postman, Swagger and JUnit<br/>
+                             Tools: Git, Docker, IntelliJ IDEA, Visual Studio Code, Maven, Npm(Node.js), Tomcat
+                             </p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 <div className='item'>
                                     <img src={meter1}  alt="img" />
-                                    <h5>Java</h5>
+                                    <h5>Java EE (Web)</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt="img" />
-                                    <h5>SpringBoot</h5>
+                                    <img src={meter3} alt="img" />
+                                    <h5>Vue</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter3}  alt="img" />
-                                    <h5>SpringCloud</h5>
+                                    <img src={meter2}  alt="img" />
+                                    <h5>React</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={meter1}  alt="img" />
                                     <h5>JavaScript</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter3}  alt="img" />
+                                    <h5>SpringBoot</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter2}  alt="img" />
+                                    <h5>SpringCloud</h5>
                                 </div>
                             </Carousel>
                         

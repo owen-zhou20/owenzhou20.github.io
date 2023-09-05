@@ -3,7 +3,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/img/logo.svg'
+import logo from '../assets/img/screenshot/logo.png'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
@@ -13,6 +13,8 @@ export default function NavBar() {
 
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
+
+  
 
   useEffect(() => {
     const onScroll = () => {
@@ -31,6 +33,7 @@ export default function NavBar() {
   const onUpdateSctiveLink = (value) => {
     setActiveLink(value)
   }
+
 
   return (
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -53,7 +56,9 @@ export default function NavBar() {
                 <a href='/#'><img src={navIcon2} alt='navIcon2'></img></a>
                 <a href='/#'><img src={navIcon3} alt='navIcon3'></img></a>
               </div>
-              <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+              <Nav>
+                <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateSctiveLink('connect')}><button className='vvd' onClick={() => onUpdateSctiveLink('connect')}><span>Let's Connect</span></button></Nav.Link>
+              </Nav>
             </span>
           </Navbar.Collapse>
         </Container>
