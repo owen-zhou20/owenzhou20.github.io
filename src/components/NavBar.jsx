@@ -14,7 +14,13 @@ export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
 
-  
+  const downloadfunc = () =>{
+    const filepath = '/static/cv/CVOwenZhou.pdf'
+    const a = document.createElement('a')
+    a.href = filepath
+    a.setAttribute('download','')
+    a.click();
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -56,9 +62,7 @@ export default function NavBar() {
                 <a href='/#'><img src={navIcon2} alt='navIcon2'></img></a>
                 <a href='/#'><img src={navIcon3} alt='navIcon3'></img></a>
               </div>
-              <Nav>
-                <Nav.Link download={'/src/assets/cv/CVOwenZhou.pdf'} href="/src/assets/cv/CVOwenZhou.pdf" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateSctiveLink('connect')}><button className='vvd' onClick={() => onUpdateSctiveLink('connect')}><span>Let's Connect</span></button></Nav.Link>
-              </Nav>
+                <button className='vvd' onClick={()=>downloadfunc()}><span>Download CV</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
