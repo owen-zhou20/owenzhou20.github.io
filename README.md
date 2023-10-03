@@ -1,3 +1,5 @@
+This portfolio page is hosted on AWS S3 at: http://portfolio-page-owen.s3-website-ap-southeast-2.amazonaws.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
